@@ -1,9 +1,8 @@
-package Service;
+package com.Kevin.BooksSearcherAPI.Service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilderCustomizer;
 
 public class ConsumoDatos implements IConsumoDatos{
 
