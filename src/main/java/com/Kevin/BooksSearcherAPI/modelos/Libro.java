@@ -1,14 +1,16 @@
 package com.Kevin.BooksSearcherAPI.modelos;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.List;
-
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Libro {
   private String titulo;
   private int descargasTotales;
   private List<String> idiomas;
    private List<DatosAutor>autores;
+    private List<DatosGenerales>datos;
 
     public String getTitulo() {
         return titulo;
@@ -43,20 +45,19 @@ public class Libro {
 
         }
 
+        public Libro(){}
   public Libro(DatosLibro l){
-        this.titulo=l.titulo();
+        this.titulo= l.titulo();
         this.descargasTotales=l.descargasTotales();
         this.idiomas=l.idiomas();
-      this.autores=l.autores();
+        this.autores=l.autores();
   }
 
-    @Override
     public String toString() {
-        return "Libro{" +
-                "titulo='" + titulo + '\'' +
-                ", descargasTotales=" + descargasTotales +
-                ", idiomas=" + idiomas +
-                ", autores=" + autores +
-                '}';
+        return "-LIBRO-\uD83D\uDCD5"+'\n'+
+                "Titulo='" + titulo + '\n'+
+                "DescargasTotales=" + descargasTotales +'\n'+
+                "Idiomas=" + idiomas +'\n'+
+                "Autores=" + autores +'\n';
     }
 }
