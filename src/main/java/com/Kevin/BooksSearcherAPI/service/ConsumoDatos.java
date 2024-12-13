@@ -1,4 +1,4 @@
-package com.Kevin.BooksSearcherAPI.Service;
+package com.Kevin.BooksSearcherAPI.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;

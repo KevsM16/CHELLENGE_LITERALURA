@@ -1,4 +1,4 @@
-package com.Kevin.BooksSearcherAPI.Service;
+package com.Kevin.BooksSearcherAPI.service;
 
 import java.io.IOException;
 import java.net.URI;

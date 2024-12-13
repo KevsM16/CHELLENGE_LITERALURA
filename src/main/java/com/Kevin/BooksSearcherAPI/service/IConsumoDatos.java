@@ -1,4 +1,4 @@
-package com.Kevin.BooksSearcherAPI.Service;
+package com.Kevin.BooksSearcherAPI.service;
 
 public interface IConsumoDatos {
 
