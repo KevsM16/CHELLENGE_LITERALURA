@@ -19,9 +19,8 @@ private LibroRepository repositorio;
     private static final String URL_API="https://gutendex.com/books/";
     List<DatosGenerales> listaLibros= new ArrayList<>();
     List<Libro> datos;
-    List<Libro>librosBuscados=new ArrayList<>();
-    Scanner lectura= new Scanner(System.in);
     List<Libro> autoresVivos;
+    Scanner lectura= new Scanner(System.in);
     public Principal(LibroRepository repository) {
     this.repositorio=repository;
     }
